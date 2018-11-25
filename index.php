@@ -9,7 +9,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/main-style.css">
 </head>
 <body>
-    <nav class="nav fixed-top navbar-expand-lg navbar-dark bg-transparent-black">
+    <header>
+        <div class="content">
+            <hgroup>
+                <h1>LOGO</h1>
+                <i>slogan</i>
+            </hgroup>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <nav class="nav navbar-expand-lg navbar-dark bg-transparent-black">
         <div class="container collapse navbar-collapse" id="tNav">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo-light.png" alt="" />
@@ -35,10 +44,11 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
+    <div class="container" style="height: 1000px;">
        
     </div>
 </body>
 <script src="./plugs/jQuery/jquery-3.3.1.min.js"></script>
 <script src="./plugs/bootstrap4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/banner.js"></script>
 </html>
