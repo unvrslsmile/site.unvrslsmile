@@ -9,16 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/main-style.css">
 </head>
 <body>
-    <header>
-        <div class="content">
-            <hgroup>
-                <h1>LOGO</h1>
-                <i>slogan</i>
-            </hgroup>
-        </div>
-        <div class="overlay"></div>
-    </header>
-    <nav class="nav navbar-expand-lg navbar-dark bg-transparent-black">
+    <nav class="nav navbar-expand-lg navbar-dark bg-transparent-black fixed-top">
         <div class="container collapse navbar-collapse" id="tNav">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo-light.png" alt="" />
@@ -44,8 +35,27 @@
             </ul>
         </div>
     </nav>
+    <header>
+        <div class="content">
+            <hgroup>
+                <h1>UNVRSLSMILE</h1>
+                <i>Know your world.</i>
+            </hgroup>
+        </div>
+        <div class="overlay"></div>
+    </header>
     <div class="container" style="height: 1000px;">
-       
+        <hr />
+        <h2>Greetings fellow traveller.</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                       Welcome to my travel blog. Which I hopefully finish by the end of this year.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="./plugs/jQuery/jquery-3.3.1.min.js"></script>
