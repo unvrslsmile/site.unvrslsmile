@@ -1,0 +1,36 @@
+/* Banner */
+body{
+    position: relative;
+    background: url("../images/banner2.jpg") center no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: auto;
+  }
+  header .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  header h1, header h2 {
+    margin: 0;
+  }
+  header h2 {
+    text-transform: uppercase;
+  }
+  header hgroup { 
+    margin: 100px auto;
+    color: #000;
+    border: 3px dashed #000;
+    padding: .7em 1.3em;
+    background-color: #fff;
+    z-index: 2;
+    min-height: 100px;
+    width: 450px;
+  }
+
+  hr{
+      background: #fff;
+  }

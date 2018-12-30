@@ -52,15 +52,15 @@ Scroller.prototype = {
             blurScroll = currentScrollY * 2,
             opaScroll = 1.4 - currentScrollY / 400;
    
-        if(currentScrollY > wHeight-50){
+        if(currentScrollY > wHeight-150){
             //$('nav').css('position','fixed');
-            $('nav').addClass('bg-dark');
-            $('nav').removeClass('bg-transparent-dark-black');
+            $('nav').addClass('c-bg-dark');
+            $('nav').removeClass('c-bg-transparent-dark-black');
         }
         else{
             //$('nav').css('position','relative');
-            $('nav').removeClass('bg-dark');
-            $('nav').addClass('bg-transparent-dark-black');
+            $('nav').removeClass('c-bg-dark');
+            $('nav').addClass('c-bg-transparent-dark-black');
         }
     
         $content.css({
