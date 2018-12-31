@@ -41,7 +41,7 @@
             <hgroup>
                 <h2>Sign Up</h2>
                 <hr />
-                <form id="signin-form" class="needs-validation" method="POST" action="#" role="form">
+                <form id="signin-form" class="needs-validation" method="POST" action="javascript:void(0);" role="form">
                     <div class="form-group">
                         <label>Username</label>
                         <input type="text" class="form-control" tabindex="1" name="uusername" placeholder="unvrslsmile" />
@@ -67,7 +67,18 @@
                                 <select class="form-control" tabindex="4" name="bmonth">
                                     <option selected value="">Month</option>
                                     <?php
-                                        $months = array(1 => "January", 2 => "February");
+                                        $months = array(01 => "January", 
+                                                        02 => "February", 
+                                                        03 => "March", 
+                                                        04 => "April", 
+                                                        05 => "May",
+                                                        06 => "June", 
+                                                        07 => "July", 
+                                                        08 => "August", 
+                                                        09 => "September", 
+                                                        10 => "October", 
+                                                        11 => "November",
+                                                        12 => "December");
                                         foreach($months as $monthnum => $monthnm){
                                             echo "<option value='".$monthnum."'>".$monthnm."</option>";
                                         }
@@ -78,12 +89,24 @@
                             <div class="col">
                                 <select class="form-control" tabindex="5" name="bday">
                                     <option selected value="">Day</option>
+                                    <?php
+                                        $days = range(1, 31);
+                                        foreach($days as $day){
+                                            echo "<option value='".$day."'>".$day."</option>";
+                                        }
+                                    ?>
                                 </select>
                                 <small class="form-text text-danger"></small>
                             </div>
                             <div class="col">
                                 <select class="form-control" tabindex="6" name="byear">
                                     <option selected value="">Year</option>
+                                    <?php
+                                        $years = range(date("Y"), 1950);
+                                        foreach($years as $year){
+                                            echo "<option value='".$year."'>".$year."</option>";
+                                        }
+                                    ?>
                                 </select>
                                 <small class="form-text text-danger"></small>
                             </div>
@@ -126,7 +149,7 @@
                     <small class="form-text">By creating an account, you agree to our <a href="tox.php">Terms & Conditions</a>.</small>
                     <br />
                     <input type="submit" id="join-btn" class="btn btn-success" name="u-signup" value="Join Now" />
-                    <a href="index.php" class="btn btn-danger">Nah</a>
+                    <a href="index.php" id="cancel-btn" class="btn btn-danger">Nah</a>
                 </form>
             </hgroup>
         </div>
@@ -136,4 +159,5 @@
 <script src="./plugs/bootstrap4/js/bootstrap.min.js"></script>
 <script src="./plugs/jQuery-validate/dist/jquery.validate.min.js"></script>
 <script src="./js/signin-script.js"></script>
+<script src="./plugs/sweet-alert/sweetalert.min.js"></script>
 </html>

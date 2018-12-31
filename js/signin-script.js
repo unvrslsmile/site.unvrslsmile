@@ -14,7 +14,7 @@ $(function(){
         rules: {
             uusername: {
                 required: true,
-                minlength: 5,
+                minlength: 3,
             },
             ufname: {
                 required: true,
@@ -56,6 +56,48 @@ $(function(){
                 minlength: "Provide at least 2 characters."
             },
             ugender: "Please select one."
+        },
+        submitHandler: function(form){
+            $.ajax({
+                url: "./lib/saveuserinfo.php",
+                type: "POST",
+                data: $("#signin-form").serialize(),
+                cache: false,
+                beforeSend: function(){
+                    swal({
+                        title: "Please wait",
+                        text: "We're processing your information.",
+                        icon: "info",
+                        buttons: false,
+                        closeOnClickOutside: false,
+                        closeOnEsc: false
+                    });
+                },
+                success: function(s){
+                    if(s != "true"){
+                        swal("Error", s, "info");
+                    }
+                    console.log(s);
+                },
+                error: function(e){
+                    swal("Sorry", "Something went wrong", "danger");
+                    console.log(e);
+                },
+                complete: function(){
+                    swal({
+                        title: "Done",
+                        text: "Please wait to be redirected to your profile.",
+                        icon: "success",
+                        buttons: false,
+                        closeOnClickOutside: false,
+                        closeOnEsc: false
+                    });
+                    setTimeout(
+                        function(){ window.location = "index.php" },
+                        3000
+                    );
+                }
+            });
         }
     });
 });
