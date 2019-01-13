@@ -39,7 +39,7 @@ $(function(){
             uconfpass: {
                 required: true,
                 minlength: 8,
-                equalTo: "#uconfpass"
+                equalTo: "#pass"
             }
         },
         messages: {

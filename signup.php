@@ -139,7 +139,7 @@
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" class="form-control" tabindex="9" name="upass" placeholder="Type a strong password" />
+                        <input type="password" id="pass" class="form-control" tabindex="9" name="upass" placeholder="Type a strong password" />
                         <small id="for-pass" class="form-text text-danger"></small>
                         <br />
                         <input type="password" id="uconfpass" class="form-control" tabindex="10" name="uconfpass" placeholder="Confirm it" />
@@ -148,8 +148,8 @@
                     <hr />
                     <small class="form-text">By creating an account, you agree to our <a href="tox.php">Terms & Conditions</a>.</small>
                     <br />
-                    <input type="submit" id="join-btn" class="btn btn-success" name="u-signup" value="Join Now" />
-                    <a href="index.php" id="cancel-btn" class="btn btn-danger">Nah</a>
+                    <input type="submit" id="join-btn" class="btn btn-success" tabindex="11" name="u-signup" value="Join Now" />
+                    <a href="index.php" id="cancel-btn" tabindex="12" class="btn btn-danger">Nah</a>
                 </form>
             </hgroup>
         </div>
