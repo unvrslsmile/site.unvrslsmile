@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Unvrslsmile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="screen" href="./plugs/bootstrap4/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./plugs/font-awesome/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="./styles/banner.css" />

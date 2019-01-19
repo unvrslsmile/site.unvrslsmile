@@ -94,7 +94,7 @@ $(function(){
                     });
                     setTimeout(
                         function(){ window.location = "index.php" },
-                        3000
+                        2500
                     );
                 }
             });

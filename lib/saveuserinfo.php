@@ -1,6 +1,7 @@
 <?php
     include "./db_connection.php";
     include "./set_timezone.php";
+    include "./pwordhash.php";
 
     if(isset($_POST['u-signup'])){
         $username = $_POST['uusername'];
@@ -17,9 +18,8 @@
         if($pass == $confpass){
             $bdateformat = $byear."-".$bmonth."-".$bday;
             $datenow = date("Y-m-d");
-            $salt = bin2hex(openssl_random_pseudo_bytes(64, $cstrong));
-            $presaltypass = $salt."".$pass;
-            $saltypass = password_hash($presaltypass, PASSWORD_DEFAULT);
+            $pws = new pWordHash(); // OOP here right
+            $saltypass = $pws->hasher($pass);
             mysqli_query($link, "INSERT INTO tbl_accounts(
                 `a_username`,
                 `a_password`,
@@ -31,8 +31,8 @@
                 `a_role`
             ) VALUES(
                 '$username',
-                '$saltypass',
-                '$salt',
+                '$saltypass[sp]',
+                '$saltypass[slt]',
                 '1',
                 '$datenow',
                 '$datenow',
@@ -48,7 +48,7 @@
                 `p_gender`,
                 `p_photo`
             ) VALUES(
-                (SELECT a_id FROM tbl_accounts WHERE a_username='$username' AND a_password='$saltypass' AND a_salt='$salt'),
+                (SELECT a_id FROM tbl_accounts WHERE a_username='$username' AND a_password='$saltypass[sp]' AND a_salt='$saltypass[slt]'),
                 '$firstname',
                 '$lastname',
                 '',
