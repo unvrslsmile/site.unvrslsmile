@@ -18,7 +18,7 @@
         if($pass == $confpass){
             $bdateformat = $byear."-".$bmonth."-".$bday;
             $datenow = date("Y-m-d");
-            $pws = new pWordHash(); // OOP here right
+            $pws = new pWordHash(); // OOP here am I right. Haha
             $saltypass = $pws->hasher($pass);
             mysqli_query($link, "INSERT INTO tbl_accounts(
                 `a_username`,

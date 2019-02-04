@@ -42,7 +42,7 @@
             <hgroup>
                 <h2>Sign In</h2>
                 <hr />
-                <form class="needs-validation" method="POST" action="#" role="form" novalidate>
+                <form class="needs-validation" method="POST" action="javascript:void(0);" role="form" novalidate>
                     <div class="form-group">
                         <label>Email or Username</label>
                         <input type="text" class="form-control" tabindex="1" name="u-username" placeholder="unvrslsmile" />
@@ -52,7 +52,7 @@
                         <input type="password" class="form-control" tabindex="2" name="u-password" placeholder="******" />
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <input type="checkbox" class="custom-control-input" name="u-autolog" id="customCheck1">
                         <label class="custom-control-label" for="customCheck1">Keep me logged in</label>
                     </div>
                     <hr />
@@ -64,4 +64,5 @@
 </body>
 <script src="./plugs/jQuery/jquery-3.3.1.min.js"></script>
 <script src="./plugs/bootstrap4/js/bootstrap.min.js"></script>
+<script src="./js/signup-script.js"></script>
 </html>
