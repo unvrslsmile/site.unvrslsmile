@@ -14,8 +14,8 @@
 <body>
     <nav class="nav navbar-expand-lg navbar-dark c-bg-dark fixed-top">
         <div class="container collapse navbar-collapse" id="tNav">
-            <a class="navbar-brand" href="#">
-                <img src="../images/logo-light.png" alt="" />
+            <a class="navbar-brand" href="index.php">
+                <img src="../images/logo.png" alt="" />
             </a>
             <ul class="navbar-nav">
                 <li class="nav-item active">

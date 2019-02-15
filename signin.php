@@ -13,26 +13,23 @@
 <body>
     <nav class="nav navbar-expand-lg navbar-dark c-bg-dark fixed-top">
         <div class="container collapse navbar-collapse" id="tNav">
-            <a class="navbar-brand" href="#">
-                <img src="./images/logo-light.png" alt="" />
+            <a class="navbar-brand" href="index.php">
+                <img src="./images/logo.png" alt="" />
             </a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+            <!--<ul class="navbar-nav">
+            </ul>-->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link btn c-btn-gray" href="signup.php">Sign Up</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="signin.php">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>

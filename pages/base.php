@@ -15,26 +15,23 @@
 <body>
     <nav class="nav navbar-expand-lg navbar-dark c-bg-transparent-black fixed-top">
         <div class="container collapse navbar-collapse" id="tNav">
-            <a class="navbar-brand" href="#">
-                <img src="./images/logo-light.png" alt="" />
+            <a class="navbar-brand" href="index.php">
+                <img src="./images/logo.png" alt="" />
             </a>
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+            <!--<ul class="navbar-nav">
+            </ul>-->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link btn c-btn-gray" href="signup.php">Sign Up</a>
+                    <a class="nav-link" href="signup.php">Sign Up</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="signin.php">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>
@@ -42,8 +39,8 @@
     <header>
         <div class="content">
             <hgroup>
-                <h1>UNVRSLSMILE</h1>
-                <i>Know your world.</i>
+                <h1>Hello there!</h1>
+                <i>How are you today?</i>
             </hgroup>
         </div>
         <div class="overlay"></div>
