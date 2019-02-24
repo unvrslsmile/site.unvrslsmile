@@ -19,11 +19,10 @@
             $bdateformat = $byear."-".$bmonth."-".$bday;
             $datenow = date("Y-m-d");
             $pws = new pWordHash(); // OOP here am I right. Haha
-            $saltypass = $pws->hasher($pass);
+            $saltypass = $pws->encrypt($pass);
             mysqli_query($link, "INSERT INTO tbl_accounts(
                 `a_username`,
                 `a_password`,
-                `a_salt`,
                 `a_isonline`,
                 `a_lastonlinedate`,
                 `a_createdate`,
@@ -31,8 +30,7 @@
                 `a_role`
             ) VALUES(
                 '$username',
-                '$saltypass[sp]',
-                '$saltypass[slt]',
+                '$saltypass',
                 '1',
                 '$datenow',
                 '$datenow',
@@ -48,7 +46,7 @@
                 `p_gender`,
                 `p_photo`
             ) VALUES(
-                (SELECT a_id FROM tbl_accounts WHERE a_username='$username' AND a_password='$saltypass[sp]' AND a_salt='$saltypass[slt]'),
+                (SELECT a_id FROM tbl_accounts WHERE a_username='$username' AND a_password='$saltypass'),
                 '$firstname',
                 '$lastname',
                 '',
@@ -79,6 +77,6 @@
         }
     }
     else{
-        echo "false";
+        echo "false1";
     }
 ?>

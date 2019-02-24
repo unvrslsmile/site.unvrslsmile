@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="screen" href="./plugs/bootstrap4/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./styles/signup-banner.css" />
+    <link rel="stylesheet" type="text/css" href="./plugs/PNotify/pnotify.custom.min.css" />
     <link rel="stylesheet" type="text/css" href="./styles/main-style.css" />
 </head>
 <body>
@@ -39,14 +40,16 @@
             <hgroup>
                 <h2>Sign In</h2>
                 <hr />
-                <form class="needs-validation" method="POST" action="javascript:void(0);" role="form" novalidate>
+                <form id="signin-form" class="needs-validation" method="POST" action="javascript:void(0);" role="form" novalidate>
                     <div class="form-group">
                         <label>Email or Username</label>
-                        <input type="text" class="form-control" tabindex="1" name="u-username" placeholder="unvrslsmile" />
+                        <input type="text" class="form-control" tabindex="1" name="uusername" placeholder="unvrslsmile" />
+                        <small class="form-text text-danger"></small>
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" class="form-control" tabindex="2" name="u-password" placeholder="******" />
+                        <input type="password" class="form-control" tabindex="2" name="upassword" placeholder="******" />
+                        <small id="for-pass" class="form-text text-danger"></small>
                     </div>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" name="u-autolog" id="customCheck1">
@@ -61,5 +64,7 @@
 </body>
 <script src="./plugs/jQuery/jquery-3.3.1.min.js"></script>
 <script src="./plugs/bootstrap4/js/bootstrap.min.js"></script>
-<script src="./js/signup-script.js"></script>
+<script src="./plugs/jQuery-validate/dist/jquery.validate.min.js"></script>
+<script src="./plugs/PNotify/pnotify.custom.min.js"></script>
+<script src="./js/signin-script.js"></script>
 </html>

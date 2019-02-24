@@ -40,7 +40,7 @@
         <div class="content">
             <hgroup>
                 <h1>IMAGINE. CREATE. SHARE.</h1>
-                <i>Experice stories from other people.</i>
+                <i>Experience stories from people by people.</i>
             </hgroup>
         </div>
         <div class="overlay"></div>

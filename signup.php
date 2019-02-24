@@ -40,7 +40,7 @@
             <hgroup>
                 <h2>Sign Up</h2>
                 <hr />
-                <form id="signin-form" class="needs-validation" method="POST" action="javascript:void(0);" role="form">
+                <form id="signup-form" class="needs-validation" method="POST" action="javascript:void(0);" role="form">
                     <div class="form-group">
                         <label>Username</label>
                         <input type="text" class="form-control" tabindex="1" name="uusername" placeholder="unvrslsmile" />
@@ -158,5 +158,5 @@
 <script src="./plugs/bootstrap4/js/bootstrap.min.js"></script>
 <script src="./plugs/jQuery-validate/dist/jquery.validate.min.js"></script>
 <script src="./plugs/PNotify/pnotify.custom.min.js"></script>
-<script src="./js/signin-script.js"></script>
+<script src="./js/signup-script.js"></script>
 </html>
