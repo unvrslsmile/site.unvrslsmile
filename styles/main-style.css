@@ -28,3 +28,11 @@ html, body{
   height: auto;
   width: 190px;
 }
+
+.btn{
+  border-radius: 0;
+}
+
+.form-control{
+  border-radius: 0;
+}

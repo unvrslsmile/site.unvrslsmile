@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Unvrslsmile</title>
+    <title>UNVRSLSMILE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="screen" href="./plugs/bootstrap4/css/bootstrap.min.css" />
@@ -39,8 +39,8 @@
     <header>
         <div class="content">
             <hgroup>
-                <h1>Hello there!</h1>
-                <i>How are you today?</i>
+                <h1>IMAGINE. CREATE. SHARE.</h1>
+                <i>Experice stories from other people.</i>
             </hgroup>
         </div>
         <div class="overlay"></div>

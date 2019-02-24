@@ -1,4 +1,5 @@
 $(function(){
+    const pnstack = {'dir1': 'down', 'dir2': 'right', 'modal': true};
     const joinbtn = $("#join-btn");
     const signinform = $("#signin-form");
     
@@ -64,13 +65,21 @@ $(function(){
                 data: $("#signin-form").serialize(),
                 cache: false,
                 beforeSend: function(){
-                    swal({
-                        title: "Please wait",
-                        text: "We're processing your information.",
-                        icon: "info",
-                        buttons: false,
-                        closeOnClickOutside: false,
-                        closeOnEsc: false
+                    new PNotify({
+                        title: "Keystreching",
+                        text: "Please wait...",
+                        type: "info",
+                        cornerclass: 'ui-pnotify-sharp',
+                        addclass: "stack-modal",
+                        stack: pnstack,
+                        hide: false,
+                        buttons: {
+                            closer: false,
+                            sticker: false
+                        },
+                        mobile: {
+                            swipe_dismiss: false
+                        }
                     });
                 },
                 success: function(s){
@@ -84,16 +93,25 @@ $(function(){
                     console.log(e);
                 },
                 complete: function(){
-                    swal({
+                    PNotify.removeAll();
+                    new PNotify({
                         title: "Done",
-                        text: "Please wait to be redirected to your profile.",
-                        icon: "success",
-                        buttons: false,
-                        closeOnClickOutside: false,
-                        closeOnEsc: false
+                        text: "Please wait...",
+                        type: "success",
+                        cornerclass: 'ui-pnotify-sharp',
+                        addclass: "stack-modal",
+                        stack: pnstack,
+                        hide: false,
+                        buttons: {
+                            closer: false,
+                            sticker: false
+                        },
+                        mobile: {
+                            swipe_dismiss: false
+                        }
                     });
                     setTimeout(
-                        function(){ window.location = "index.php" },
+                        function(){ window.location = "signin.php" },
                         2500
                     );
                 }

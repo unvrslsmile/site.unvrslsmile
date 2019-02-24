@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Unvrslsmile</title>
+    <title>UNVRSLSMILE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="screen" href="./plugs/bootstrap4/css/bootstrap.min.css" />
@@ -20,7 +20,7 @@
             </ul>-->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link btn c-btn-gray" href="signup.php">Sign Up</a>
+                    <a class="nav-link" href="signup.php">Sign Up</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="signin.php">Sign In</a>
