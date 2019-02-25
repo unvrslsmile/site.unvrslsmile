@@ -47,7 +47,7 @@
     </header>
     <div class="container" style="height: 1000px;">
         <hr />
-        <h2>Greetings fellow traveller.</h2>
+        <h2>Stories</h2>
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-default">
@@ -118,6 +118,7 @@
 	<!-- ./Footer -->
 </body>
 <script src="./plugs/jQuery/jquery-3.3.1.min.js"></script>
+<script src="../plugs/popper/popper.min.js"></script>
 <script src="./plugs/bootstrap4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/banner.js"></script>
 </html>

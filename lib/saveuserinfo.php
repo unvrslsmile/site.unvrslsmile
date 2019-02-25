@@ -22,6 +22,7 @@
             $saltypass = $pws->encrypt($pass); // End OOP
             mysqli_query($link, "INSERT INTO tbl_accounts(
                 `a_username`,
+                `a_email`,
                 `a_password`,
                 `a_isonline`,
                 `a_lastonlinedate`,
@@ -30,6 +31,7 @@
                 `a_role`
             ) VALUES(
                 '$username',
+                '$email',
                 '$saltypass',
                 '1',
                 '',

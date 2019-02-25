@@ -3,44 +3,40 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Unvrslsmile</title>
+    <title>UNVRSLSMILE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../plugs/bootstrap4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../plugs/font-awesome/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../styles/footer.css" />
-    <link rel="stylesheet" type="text/css" href="../styles/main-style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./plugs/bootstrap4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./plugs/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/main-style.css" />
 </head>
 <body>
     <nav class="nav navbar-expand-lg navbar-dark c-bg-dark fixed-top">
         <div class="container collapse navbar-collapse" id="tNav">
             <a class="navbar-brand" href="index.php">
-                <img src="../images/logo.png" alt="" />
+                <img src="./images/logo.png" alt="" />
             </a>
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.php">(username)</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+            <!--<ul class="navbar-nav">
+            </ul>-->
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link btn c-btn-gray" href="signup.php">Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="signin.php">Sign In</a>
-                </li>
+				<li class="nav-item active dropdown">
+        			<a class="nav-link dropdown-toggle" href="#" id="profiledorpdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<?php echo $_SESSION['name']; ?>
+        			</a>
+        			<div class="dropdown-menu" aria-labelledby="profiledropdown">
+						<a class="dropdown-item" href="#">Dashboard</a>
+						<a class="dropdown-item" href="#">My Profile</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Preferences</a>
+          				<a class="dropdown-item" href="logout.php">Sign Out</a>
+        			</div>
+      			</li>
             </ul>
         </div>
     </nav>
-    <div class="container" style="height: 1000px;">
-        <hr />
-        <h2>Greetings fellow traveller.</h2>
+    <div class="container" style="height: 1000px; padding-top: 5em;">
+        <h2>New Stories</h2>
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-default">
@@ -110,6 +106,7 @@
 	</section>
 	<!-- ./Footer -->
 </body>
-<script src="../plugs/jQuery/jquery-3.3.1.min.js"></script>
-<script src="../plugs/bootstrap4/js/bootstrap.min.js"></script>
+<script src="./plugs/jQuery/jquery-3.3.1.min.js"></script>
+<script src="./plugs/popper/popper.min.js"></script>
+<script src="./plugs/bootstrap4/js/bootstrap.min.js"></script>
 </html>

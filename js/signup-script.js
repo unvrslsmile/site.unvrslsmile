@@ -90,7 +90,7 @@ $(function(){
                         });
                         setTimeout(
                             function(){ window.location = "signin.php" },
-                            2500
+                            1500
                         );
                     }
                     console.log(s);

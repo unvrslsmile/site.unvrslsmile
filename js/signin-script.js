@@ -35,7 +35,7 @@ $(function(){
                         $("input[name='u-signin']").val("Sign In").prop('disabled', false);
                         new PNotify({
                             title: "Error",
-                            text: "Please try again.",
+                            text: "Please check username/email or password.",
                             type: "danger",
                             cornerclass: 'ui-pnotify-sharp'
                         });
@@ -59,7 +59,7 @@ $(function(){
                         });
                         setTimeout(
                             function(){ window.location = "index.php" },
-                            2500
+                            1500
                         );
                     }
                     console.log(s);
@@ -68,7 +68,7 @@ $(function(){
                     $("input[name='u-signin']").val("Sign In").prop('disabled', false);
                     new PNotify({
                         title: "Error",
-                        text: "An error ocurred. Please Refresh the page.",
+                        text: "An error ocurred. Please try again.",
                         type: "danger",
                         cornerclass: 'ui-pnotify-sharp'
                     });
