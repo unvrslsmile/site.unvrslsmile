@@ -32,18 +32,19 @@ $(function(){
                 },
                 success: function(s){
                     if(s != "true"){
-                        $("input[name='u-signin']").prop('disabled', false);
+                        $("input[name='u-signin']").val("Sign In").prop('disabled', false);
                         new PNotify({
                             title: "Error",
-                            text: "Sorry, an error ocurred on our side... Please try again.",
+                            text: "Please try again.",
                             type: "danger",
                             cornerclass: 'ui-pnotify-sharp'
                         });
+                        console.log(s);
                     }
                     else{
                         $("input[name='u-signin']").val("Done").prop('disabled', true);
                         new PNotify({
-                            title: "Done",
+                            title: "Success",
                             text: "Please wait...",
                             type: "success",
                             cornerclass: 'ui-pnotify-sharp',

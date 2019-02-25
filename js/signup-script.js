@@ -83,7 +83,7 @@ $(function(){
                     else{
                         $("#join-btn").val("Done").prop('disabled', true);
                         new PNotify({
-                            title: "Done",
+                            title: "Success",
                             text: "Please wait...",
                             type: "success",
                             cornerclass: 'ui-pnotify-sharp'
