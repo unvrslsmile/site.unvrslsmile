@@ -118,7 +118,7 @@
 	<!-- ./Footer -->
 </body>
 <script src="./plugs/jQuery/jquery-3.3.1.min.js"></script>
-<script src="../plugs/popper/popper.min.js"></script>
+<script src="./plugs/popper/popper.min.js"></script>
 <script src="./plugs/bootstrap4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/banner.js"></script>
 </html>

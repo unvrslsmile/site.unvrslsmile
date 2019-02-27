@@ -75,7 +75,7 @@ $(function(){
                         );
                         new PNotify({
                             title: "Error",
-                            text: "An error ocurred on our side...",
+                            text: s,
                             type: "danger",
                             cornerclass: 'ui-pnotify-sharp'
                         });

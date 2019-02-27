@@ -35,7 +35,7 @@ $(function(){
                         $("input[name='u-signin']").val("Sign In").prop('disabled', false);
                         new PNotify({
                             title: "Error",
-                            text: "Please check username/email or password.",
+                            text: s,
                             type: "danger",
                             cornerclass: 'ui-pnotify-sharp'
                         });
@@ -59,10 +59,9 @@ $(function(){
                         });
                         setTimeout(
                             function(){ window.location = "index.php" },
-                            1500
+                            800
                         );
                     }
-                    console.log(s);
                 },
                 error: function(e){
                     $("input[name='u-signin']").val("Sign In").prop('disabled', false);

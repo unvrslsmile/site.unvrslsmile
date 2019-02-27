@@ -52,7 +52,7 @@
                         <small id="for-pass" class="form-text text-danger"></small>
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" name="u-autolog" id="customCheck1">
+                        <input type="checkbox" class="custom-control-input" name="u-autolog" value="1" id="customCheck1">
                         <label class="custom-control-label" for="customCheck1">Keep me logged in</label>
                     </div>
                     <hr />

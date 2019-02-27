@@ -56,29 +56,13 @@
                 '$gender',
                 'default.png'
             )");
-            /*mysqli_query($link, "INSERT INTO tbl_profile(
-                `p_fname`,
-                `p_lname`,
-                `p_nname`,
-                `p_bdate`,
-                `p_gender`,
-                `p_photo`
-            ) VALUES(
-                '$firstname',
-                '$lastname',
-                '',
-                '$dateformat',
-                '$gender',
-                ''
-            )");*/
-
             echo "true";
         }
         else{
-            echo "false";
+            echo "Please re-type passwords.";
         }
     }
     else{
-        echo "false1";
+        echo "An error occured. Please try again. 0x01";
     }
 ?>
