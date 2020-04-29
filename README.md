@@ -1,1 +1,1 @@
-I will be migrating this project to Vue.js & Laravel
+I will be migrating this project to Laravel
